@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount" />
+
+        <EditText
+            android:id="@+id/amountInputId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="11"
+            android:inputType="number"
+            android:text="@string/amountInputId" />
+
+        <TextView
+            android:id="@+id/pax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/pax" />
+
+        <EditText
+            android:id="@+id/paxInputId"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:inputType="number"
+            android:text="@string/paxInputId" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text=""
+            android:textOff="@string/disabled"
+            android:textOn="@string/enabled" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text=""
+            android:textOff="@string/disabled2"
+            android:textOn="@string/enabled2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/discount" />
+
+        <EditText
+            android:id="@+id/discountInput"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/discountInput"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cash" />
+
+            <RadioButton
+                android:id="@+id/paynow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paynow" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/split"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/split" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/totalBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/totalBill" />
+
+        <TextView
+            android:id="@+id/eachPays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eachPays" />
+    </LinearLayout>
+
+</LinearLayout>
